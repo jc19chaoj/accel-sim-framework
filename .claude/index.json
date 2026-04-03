@@ -1,0 +1,145 @@
+{
+  "timestamp": "2026-04-03T23:27:12+00:00",
+  "project": "accel-sim-framework",
+  "description": "GPU 架构模拟框架，用于 NVIDIA GPU 性能建模与微架构研究",
+  "root_claude_md": "CLAUDE.md",
+  "modules": [
+    {
+      "path": "gpu-simulator",
+      "claude_md": "gpu-simulator/CLAUDE.md",
+      "language": "C++17",
+      "role": "核心仿真引擎（trace-driven 前端 + GPGPU-Sim 4.0 性能模型集成）",
+      "entry_files": ["gpu-simulator/main.cc", "gpu-simulator/accel-sim.cc", "gpu-simulator/main.py"],
+      "build_files": ["gpu-simulator/Makefile", "gpu-simulator/CMakeLists.txt"],
+      "interfaces": ["gpu-simulator/accel-sim.h", "gpu-simulator/python_wrapper/python_wrapper.cc"],
+      "test_dir": null,
+      "config_files": ["gpu-simulator/setup_environment.sh", "gpu-simulator/configs/tested-cfgs/"],
+      "key_paths": [
+        "gpu-simulator/trace-parser/",
+        "gpu-simulator/trace-driven/",
+        "gpu-simulator/ISA_Def/",
+        "gpu-simulator/gpgpu-sim/"
+      ]
+    },
+    {
+      "path": "util/tracer_nvbit",
+      "claude_md": "util/tracer_nvbit/CLAUDE.md",
+      "language": "CUDA/C++",
+      "role": "NVBit SASS 追踪工具（在真实 GPU 上捕获指令追踪）",
+      "entry_files": ["util/tracer_nvbit/run_hw_trace.py", "util/tracer_nvbit/tracer_tool/tracer_tool.cu"],
+      "build_files": ["util/tracer_nvbit/Makefile", "util/tracer_nvbit/tracer_tool/Makefile"],
+      "interfaces": [],
+      "test_dir": null,
+      "config_files": ["util/tracer_nvbit/install_nvbit.sh"],
+      "key_paths": [
+        "util/tracer_nvbit/tracer_tool/",
+        "util/tracer_nvbit/others/spinlock_tool/",
+        "util/tracer_nvbit/tracer_tool/traces-processing/"
+      ]
+    },
+    {
+      "path": "util/job_launching",
+      "claude_md": "util/job_launching/CLAUDE.md",
+      "language": "Python",
+      "role": "仿真任务调度与管理框架（启动、监控、统计收集）",
+      "entry_files": ["util/job_launching/run_simulations.py"],
+      "build_files": [],
+      "interfaces": [
+        "util/job_launching/run_simulations.py",
+        "util/job_launching/monitor_func_test.py",
+        "util/job_launching/get_stats.py",
+        "util/job_launching/job_status.py"
+      ],
+      "test_dir": null,
+      "config_files": [
+        "util/job_launching/configs/define-standard-cfgs.yml",
+        "util/job_launching/apps/define-all-apps.yml",
+        "util/job_launching/stats/example_stats.yml"
+      ],
+      "key_paths": [
+        "util/job_launching/apps/",
+        "util/job_launching/configs/"
+      ]
+    },
+    {
+      "path": "util/plotting",
+      "claude_md": "util/plotting/CLAUDE.md",
+      "language": "Python",
+      "role": "关联分析与可视化（仿真-硬件对比图表）",
+      "entry_files": ["util/plotting/plot-correlation.py", "util/plotting/plot-get-stats.py"],
+      "build_files": [],
+      "interfaces": [],
+      "test_dir": null,
+      "config_files": [],
+      "key_paths": ["util/plotting/correl_mappings.py"]
+    },
+    {
+      "path": "util/tuner",
+      "claude_md": "util/tuner/CLAUDE.md",
+      "language": "Python/C++",
+      "role": "自动化配置调优工具（通过微基准测试生成匹配硬件的配置）",
+      "entry_files": ["util/tuner/tuner.py"],
+      "build_files": [],
+      "interfaces": [],
+      "test_dir": null,
+      "config_files": ["util/tuner/config_template/gpgpusim.config"],
+      "key_paths": ["util/tuner/run_all.sh", "util/tuner/get_ubench.sh"]
+    },
+    {
+      "path": "util/hw_stats",
+      "claude_md": null,
+      "language": "Python/Shell",
+      "role": "硬件性能统计采集（nvprof/nsight 封装）",
+      "entry_files": ["util/hw_stats/run_hw.py"],
+      "build_files": [],
+      "interfaces": [],
+      "test_dir": null,
+      "config_files": [],
+      "key_paths": []
+    },
+    {
+      "path": "util/accelwattch",
+      "claude_md": null,
+      "language": "Python/Shell",
+      "role": "AccelWattch 功耗建模辅助脚本",
+      "entry_files": ["util/accelwattch/launch_jobs.sh"],
+      "build_files": ["util/accelwattch/accelwattch_hw_profiler/Makefile"],
+      "interfaces": [],
+      "test_dir": null,
+      "config_files": [],
+      "key_paths": []
+    }
+  ],
+  "coverage": {
+    "estimated_total_source_files": 180,
+    "scanned_files": 42,
+    "coverage_percent": 23,
+    "note": "估算仅计算项目自有源文件（排除 gpgpu-sim 子模块约 80+ 文件、pybind11 外部依赖、hw_run 数据文件）。已扫描的 42 个文件覆盖了所有关键入口、接口、构建文件和配置。",
+    "modules_with_claude_md": 5,
+    "modules_without_claude_md": 2,
+    "module_coverage_percent": 71
+  },
+  "gaps": [
+    {
+      "module": "util/hw_stats",
+      "missing": ["CLAUDE.md", "接口详情"],
+      "priority": "低"
+    },
+    {
+      "module": "util/accelwattch",
+      "missing": ["CLAUDE.md", "接口详情", "功耗模型配置说明"],
+      "priority": "低"
+    },
+    {
+      "module": "gpu-simulator/gpgpu-sim",
+      "missing": ["深度源码分析（独立子模块，约 80+ 源文件）"],
+      "priority": "中",
+      "note": "gpgpu-sim 是独立的 git 仓库，包含完整的 GPU 性能模型（shader、cache、dram、interconnect 等），建议单独扫描"
+    }
+  ],
+  "ignored": {
+    "directories": ["hw_run/", "sim_run_*/", ".git/", "gpu-simulator/gpgpu-sim/.git/", "gpu-simulator/extern/pybind11/"],
+    "reason": "数据目录、git 内部文件和第三方外部依赖"
+  },
+  "truncated": false
+}

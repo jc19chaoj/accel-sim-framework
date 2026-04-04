@@ -1,0 +1,196 @@
+{
+  "id": "2026-04-03-210803",
+  "generated_at": "2026-04-03T13:08:03.312119126Z",
+  "language": "zh",
+  "pages": [
+    {
+      "slug": "1-xiang-mu-gai-shu-nvidia-sass-ni-xiang-gong-cheng-gong-ju-ji",
+      "title": "项目概述：NVIDIA SASS 逆向工程工具集",
+      "file": "1-xiang-mu-gai-shu-nvidia-sass-ni-xiang-gong-cheng-gong-ju-ji.md",
+      "section": "快速入门",
+      "level": "Beginner"
+    },
+    {
+      "slug": "2-bian-yi-gou-jian-yu-huan-jing-pei-zhi",
+      "title": "编译构建与环境配置",
+      "file": "2-bian-yi-gou-jian-yu-huan-jing-pei-zhi.md",
+      "section": "快速入门",
+      "level": "Beginner"
+    },
+    {
+      "slug": "3-gong-ju-lian-quan-lan-cong-qu-dong-ti-qu-dao-er-jin-zhi-fen-xi",
+      "title": "工具链全览：从驱动提取到二进制分析",
+      "file": "3-gong-ju-lian-quan-lan-cong-qu-dong-ti-qu-dao-er-jin-zhi-fen-xi.md",
+      "section": "快速入门",
+      "level": "Beginner"
+    },
+    {
+      "slug": "4-nvidia-qu-dong-zhong-de-jia-mi-zhi-ling-miao-shu-biao-ti-qu-denv-denv11-denv12",
+      "title": "NVIDIA 驱动中的加密指令描述表提取（denv/denv11/denv12）",
+      "file": "4-nvidia-qu-dong-zhong-de-jia-mi-zhi-ling-miao-shu-biao-ti-qu-denv-denv11-denv12.md",
+      "section": "深入解析",
+      "group": "核心数据提取流水线",
+      "level": "Advanced"
+    },
+    {
+      "slug": "5-sass-zhi-ling-miao-shu-wen-jian-ge-shi-yu-jia-gou-shu-ju-mu-lu-data-data11-data12",
+      "title": "SASS 指令描述文件格式与架构数据目录（data/data11/data12）",
+      "file": "5-sass-zhi-ling-miao-shu-wen-jian-ge-shi-yu-jia-gou-shu-ju-mu-lu-data-data11-data12.md",
+      "section": "深入解析",
+      "group": "核心数据提取流水线",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "6-ead-pl-zhi-ling-bian-ma-sheng-cheng-qi-cong-miao-shu-wen-jian-dao-sm_xx-so-gong-xiang-ku",
+      "title": "ead.pl 指令编码生成器：从描述文件到 sm_XX.so 共享库",
+      "file": "6-ead-pl-zhi-ling-bian-ma-sheng-cheng-qi-cong-miao-shu-wen-jian-dao-sm_xx-so-gong-xiang-ku.md",
+      "section": "深入解析",
+      "group": "核心数据提取流水线",
+      "level": "Advanced"
+    },
+    {
+      "slug": "7-ptx-hong-mo-ban-xi-tong-yu-nei-zhi-han-shu-macros-mu-lu",
+      "title": "PTX 宏模板系统与内置函数（macros/ 目录）",
+      "file": "7-ptx-hong-mo-ban-xi-tong-yu-nei-zhi-han-shu-macros-mu-lu.md",
+      "section": "深入解析",
+      "group": "核心数据提取流水线",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "8-nvd-fan-hui-bian-qi-jia-gou-yu-elf-cubin-jie-xi",
+      "title": "nvd 反汇编器架构与 ELF/CUBIN 解析",
+      "file": "8-nvd-fan-hui-bian-qi-jia-gou-yu-elf-cubin-jie-xi.md",
+      "section": "深入解析",
+      "group": "SASS 反汇编器 nvd",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "9-sass-zhi-ling-bian-ma-zi-duan-yu-yan-ma-ji-zhi",
+      "title": "SASS 指令编码字段与掩码机制",
+      "file": "9-sass-zhi-ling-bian-ma-zi-duan-yu-yan-ma-ji-zhi.md",
+      "section": "深入解析",
+      "group": "SASS 反汇编器 nvd",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "10-yan-chi-diao-du-biao-fen-xi-yu-zhi-ling-wei-ci-xi-tong",
+      "title": "延迟调度表分析与指令谓词系统",
+      "file": "10-yan-chi-diao-du-biao-fen-xi-yu-zhi-ling-wei-ci-xi-tong.md",
+      "section": "深入解析",
+      "group": "SASS 反汇编器 nvd",
+      "level": "Advanced"
+    },
+    {
+      "slug": "11-ji-cun-qi-zhui-zong-yu-lut-cao-zuo-jie-ma",
+      "title": "寄存器追踪与 LUT 操作解码",
+      "file": "11-ji-cun-qi-zhui-zong-yu-lut-cao-zuo-jie-ma.md",
+      "section": "深入解析",
+      "group": "SASS 反汇编器 nvd",
+      "level": "Advanced"
+    },
+    {
+      "slug": "12-ina-jiao-hu-shi-sass-hui-bian-qi-zhi-ling-biao-dan-guo-lu-yu-bian-ma",
+      "title": "ina 交互式 SASS 汇编器：指令表单过滤与编码",
+      "file": "12-ina-jiao-hu-shi-sass-hui-bian-qi-zhi-ling-biao-dan-guo-lu-yu-bian-ma.md",
+      "section": "深入解析",
+      "group": "交互式工具集",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "13-ced-lei-sed-de-cubin-nei-lian-bu-ding-gong-ju",
+      "title": "ced 类 sed 的 Cubin 内联补丁工具",
+      "file": "13-ced-lei-sed-de-cubin-nei-lian-bu-ding-gong-ju.md",
+      "section": "深入解析",
+      "group": "交互式工具集",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "14-pa-nvdisasm-shu-chu-jie-xi-qi-yu-strange-loopyan-zheng-liu-cheng",
+      "title": "pa nvdisasm 输出解析器与\"Strange Loop\"验证流程",
+      "file": "14-pa-nvdisasm-shu-chu-jie-xi-qi-yu-strange-loopyan-zheng-liu-cheng.md",
+      "section": "深入解析",
+      "group": "交互式工具集",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "15-decuda-qu-dong-fen-xi-kuang-jia-yu-x64-fan-hui-bian-ji-cheng",
+      "title": "decuda 驱动分析框架与 x64 反汇编集成",
+      "file": "15-decuda-qu-dong-fen-xi-kuang-jia-yu-x64-fan-hui-bian-ji-cheng.md",
+      "section": "深入解析",
+      "group": "CUDA 驱动分析框架（cudaso）",
+      "level": "Advanced"
+    },
+    {
+      "slug": "16-diao-shi-zhui-zong-zhu-ru-de_bg-de_cupti-yu-simple_api-jie-kou",
+      "title": "调试追踪注入：de_bg、de_cupti 与 simple_api 接口",
+      "file": "16-diao-shi-zhui-zong-zhu-ru-de_bg-de_cupti-yu-simple_api-jie-kou.md",
+      "section": "深入解析",
+      "group": "CUDA 驱动分析框架（cudaso）",
+      "level": "Advanced"
+    },
+    {
+      "slug": "17-ptxas-jia-mi-biao-ti-qu-de_ptx-yu-cupti-hui-diao-fen-xi",
+      "title": "ptxas 加密表提取（de_ptx）与 CUPTI 回调分析",
+      "file": "17-ptxas-jia-mi-biao-ti-qu-de_ptx-yu-cupti-hui-diao-fen-xi.md",
+      "section": "深入解析",
+      "group": "CUDA 驱动分析框架（cudaso）",
+      "level": "Advanced"
+    },
+    {
+      "slug": "18-nei-he-zhui-zong-qi-elf-yu-yun-xing-shi-nei-cun-jian-ce-rtmem-tracers",
+      "title": "内核追踪器 ELF 与运行时内存检测（rtmem/tracers）",
+      "file": "18-nei-he-zhui-zong-qi-elf-yu-yun-xing-shi-nei-cun-jian-ce-rtmem-tracers.md",
+      "section": "深入解析",
+      "group": "CUDA 驱动分析框架（cudaso）",
+      "level": "Advanced"
+    },
+    {
+      "slug": "19-fat-binary-ge-shi-jie-xi-yu-jie-ya-fb-gong-ju",
+      "title": "Fat Binary 格式解析与解压（fb 工具）",
+      "file": "19-fat-binary-ge-shi-jie-xi-yu-jie-ya-fb-gong-ju.md",
+      "section": "深入解析",
+      "group": "辅助工具与脚本",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "20-nvrtc-nei-zhi-zi-jie-ma-ti-qu-nvb-gong-ju",
+      "title": "NVRTC 内置字节码提取（nvb 工具）",
+      "file": "20-nvrtc-nei-zhi-zi-jie-ma-ti-qu-nvb-gong-ju.md",
+      "section": "深入解析",
+      "group": "辅助工具与脚本",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "21-dg-pl-cubin-fen-xi-cfg-gou-jian-zhi-ling-diao-du-you-hua-yu-ji-cun-qi-fu-yong",
+      "title": "dg.pl Cubin 分析：CFG 构建、指令调度优化与寄存器复用",
+      "file": "21-dg-pl-cubin-fen-xi-cfg-gou-jian-zhi-ling-diao-du-you-hua-yu-ji-cun-qi-fu-yong.md",
+      "section": "深入解析",
+      "group": "辅助工具与脚本",
+      "level": "Advanced"
+    },
+    {
+      "slug": "22-ctf-gong-ju-yu-cubin-er-jin-zhi-bu-ding-shi-jian",
+      "title": "CTF 工具与 Cubin 二进制补丁实践",
+      "file": "22-ctf-gong-ju-yu-cubin-er-jin-zhi-bu-ding-shi-jian.md",
+      "section": "深入解析",
+      "group": "辅助工具与脚本",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "23-gpu-jia-gou-yan-jin-cong-fermi-sm_2-dao-blackwell-sm_120-de-zhi-chi-ju-zhen",
+      "title": "GPU 架构演进：从 Fermi（sm_2）到 Blackwell（sm_120）的支持矩阵",
+      "file": "23-gpu-jia-gou-yan-jin-cong-fermi-sm_2-dao-blackwell-sm_120-de-zhi-chi-ju-zhen.md",
+      "section": "深入解析",
+      "group": "架构支持与扩展",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "24-sass-jie-xi-yin-qing-he-xin-nv_rend-xuan-ran-kuang-jia-yu-sass_parser-mo-ban-xi-tong",
+      "title": "SASS 解析引擎核心：nv_rend 渲染框架与 sass_parser 模板系统",
+      "file": "24-sass-jie-xi-yin-qing-he-xin-nv_rend-xuan-ran-kuang-jia-yu-sass_parser-mo-ban-xi-tong.md",
+      "section": "深入解析",
+      "group": "架构支持与扩展",
+      "level": "Intermediate"
+    }
+  ]
+}

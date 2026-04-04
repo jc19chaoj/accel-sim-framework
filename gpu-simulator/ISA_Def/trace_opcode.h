@@ -227,6 +227,107 @@ enum TraceInstrOpcode {
   OP_SUQUERY,
   // Shared between ampere and turing
   OP_F2FP,
+  // unique insts for hopper
+  // DPX instructions (Dynamic Programming Accelerator)
+  OP_VIMNMX,
+  OP_VIMNMX3,
+  OP_VIADDMNMX,
+  OP_VIADD,
+  OP_VHMNMX,
+  // GMMA (Group Matrix Multiply-Accumulate) - stub for Phase 0
+  OP_HGMMA,
+  OP_IGMMA,
+  OP_BGMMA,
+  OP_QGMMA,
+  // TMA (Tensor Memory Accelerator) - stub for Phase 0
+  OP_UTMALDG,
+  OP_UTMASTG,
+  OP_UTMAREDG,
+  OP_UTMACMDFLUSH,
+  OP_UTMAPF,
+  OP_UTMACCTL,
+  OP_UBLKCP,
+  OP_UBLKRED,
+  OP_UBLKPF,
+  // Warp Group instructions - stub for Phase 0
+  OP_WARPGROUP,
+  OP_WARPGROUPSET,
+  // CGA Barrier (Cluster) - stub for Phase 0
+  OP_UCGABAR_ARV,
+  OP_UCGABAR_GET,
+  OP_UCGABAR_SET,
+  OP_UCGABAR_WAIT,
+  OP_UCGABARARV,
+  OP_UCGABARGET,
+  OP_UCGABARSET,
+  OP_UCGABARWAIT,
+  // DSMEM-related - stub for Phase 0
+  OP_STAS,
+  OP_REDAS,
+  OP_ARRIVES,
+  OP_SYNCS,
+  // Hopper control flow
+  OP_ELECT,
+  OP_ENDCOLLECTIVE,
+  OP_PREEXIT,
+  OP_ACQBULK,
+  // Hopper memory
+  OP_FENCE,
+  OP_REDG,
+  OP_LDGMC,
+  OP_STSM,
+  OP_FOOTPRINT,
+  OP_CGAERRBAR,
+  // Hopper UDP
+  OP_UMOV32I,
+  OP_ULEPC,
+  // Hopper misc
+  OP_USETMAXREG,
+  OP_USETSHMSZ,
+  OP_CLMAD,
+  OP_GETFPFLAGS,
+  OP_SETFPFLAGS,
+  OP_BITEXTRACT,
+  OP_SCATTER,
+  OP_GATHER,
+  OP_SPMETADATA,
+  OP_GENMETADATA,
+  OP_IDE,
+  OP_IMAD32I,
+  OP_STP,
+  // Critic Review: int_pipe补全
+  OP_VMAD,
+  OP_VSET,
+  OP_VSETP,
+  OP_VSHL,
+  OP_VSHR,
+  // Critic Review: cbu_pipe补全
+  OP_KIL,
+  OP_NANOTRAP,
+  OP_BSSY_OLD,
+  // Critic Review: mio_pipe补全
+  OP_AL2P,
+  OP_ALD,
+  OP_AST,
+  OP_IPA,
+  OP_ISBERD,
+  OP_ISBEWR,
+  OP_OUT,
+  OP_PIXLD,
+  OP_LDTRAM,
+  OP_LD_OLD,
+  OP_LDG_OLD,
+  OP_VILD,
+  OP_F2F64,
+  OP_F2I64,
+  OP_FRND64,
+  OP_I2F64,
+  OP_SUCCTL,
+  OP_TXA,
+  // Critic Review: fma64heavy_pipe (DMNMX/DSET already in pascal section)
+  // Note: OP_IMUL32I already in Volta section
+  // Critic Review: fp16_pipe (HMNMX2 already in ampere section, VHMNMX above)
+  // Critic Review: fmalighter_pipe (RRO already in pascal section)
   SASS_NUM_OPCODES /* The total number of opcodes. */
 };
 typedef enum TraceInstrOpcode sass_op_type;

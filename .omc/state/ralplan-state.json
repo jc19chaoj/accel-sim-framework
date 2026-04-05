@@ -1,0 +1,10 @@
+{
+  "active": false,
+  "current_phase": "consensus-approved",
+  "_meta": {
+    "mode": "ralplan",
+    "sessionId": null,
+    "updatedAt": "2026-04-05T07:25:29.148Z",
+    "updatedBy": "state_write_tool"
+  }
+}

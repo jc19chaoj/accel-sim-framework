@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-03T23:27:12+00:00",
+  "timestamp": "2026-04-04T20:27:45+00:00",
   "project": "accel-sim-framework",
   "description": "GPU 架构模拟框架，用于 NVIDIA GPU 性能建模与微架构研究",
   "root_claude_md": "CLAUDE.md",
@@ -24,18 +24,39 @@
     {
       "path": "util/tracer_nvbit",
       "claude_md": "util/tracer_nvbit/CLAUDE.md",
-      "language": "CUDA/C++",
-      "role": "NVBit SASS 追踪工具（在真实 GPU 上捕获指令追踪）",
-      "entry_files": ["util/tracer_nvbit/run_hw_trace.py", "util/tracer_nvbit/tracer_tool/tracer_tool.cu"],
-      "build_files": ["util/tracer_nvbit/Makefile", "util/tracer_nvbit/tracer_tool/Makefile"],
-      "interfaces": [],
+      "language": "CUDA/C++/Python",
+      "role": "NVBit 1.7.6 SASS 追踪工具（在真实 GPU 上捕获指令追踪，支持 SM70-SM90）",
+      "entry_files": [
+        "util/tracer_nvbit/run_hw_trace.py",
+        "util/tracer_nvbit/tracer_tool/tracer_tool.cu",
+        "util/tracer_nvbit/modal/trace_h100.py"
+      ],
+      "build_files": [
+        "util/tracer_nvbit/Makefile",
+        "util/tracer_nvbit/tracer_tool/Makefile",
+        "util/tracer_nvbit/tracer_tool/traces-processing/Makefile",
+        "util/tracer_nvbit/others/spinlock_tool/Makefile"
+      ],
+      "interfaces": [
+        "util/tracer_nvbit/tracer_tool/tracer_tool.so (LD_PRELOAD injection)",
+        "util/tracer_nvbit/tracer_tool/traces-processing/post-traces-processing",
+        "util/tracer_nvbit/others/spinlock_tool/spinlock_tool.so"
+      ],
       "test_dir": null,
       "config_files": ["util/tracer_nvbit/install_nvbit.sh"],
       "key_paths": [
         "util/tracer_nvbit/tracer_tool/",
+        "util/tracer_nvbit/tracer_tool/traces-processing/",
         "util/tracer_nvbit/others/spinlock_tool/",
-        "util/tracer_nvbit/tracer_tool/traces-processing/"
-      ]
+        "util/tracer_nvbit/modal/"
+      ],
+      "coverage": {
+        "total_files": 28,
+        "scanned_files": 28,
+        "coverage_percent": 100,
+        "gaps": [],
+        "notes": "所有源代码文件均已扫描。modal/traces_output/ 下的二进制追踪文件和 .omc/ 状态文件仅记录路径未读取内容。"
+      }
     },
     {
       "path": "util/job_launching",
@@ -114,7 +135,7 @@
     "estimated_total_source_files": 180,
     "scanned_files": 42,
     "coverage_percent": 23,
-    "note": "估算仅计算项目自有源文件（排除 gpgpu-sim 子模块约 80+ 文件、pybind11 外部依赖、hw_run 数据文件）。已扫描的 42 个文件覆盖了所有关键入口、接口、构建文件和配置。",
+    "note": "估算仅计算项目自有源文件（排除 gpgpu-sim 子模块约 80+ 文件、pybind11 外部依赖、hw_run 数据文件）。已扫描的 42 个文件覆盖了所有关键入口、接口、构建文件和配置。util/tracer_nvbit 模块已 100% 覆盖。",
     "modules_with_claude_md": 5,
     "modules_without_claude_md": 2,
     "module_coverage_percent": 71

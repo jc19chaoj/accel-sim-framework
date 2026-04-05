@@ -212,6 +212,9 @@ bool trace_warp_inst_t::parse_from_trace_struct(
     assert(0 && "undefined instruction");
   }
   std::string opcode = trace.opcode;
+  // Store SASS opcode name for perfetto tracing
+  strncpy(sass_opcode, opcode1.c_str(), sizeof(sass_opcode) - 1);
+  sass_opcode[sizeof(sass_opcode) - 1] = '\0';
   if (opcode1 == "MUFU") {  // Differentiate between different MUFU operations
                             // for power model
     if ((opcode == "MUFU.SIN") || (opcode == "MUFU.COS")) sp_op = FP_SIN_OP;

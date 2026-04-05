@@ -1,0 +1,409 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1775371475643,
+  "projectRoot": "/home/robin/Projects/accel-sim-framework",
+  "techStack": {
+    "languages": [
+      {
+        "name": "Python",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "requirements.txt"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "pip",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs"
+    ],
+    "gitBranches": {
+      "defaultBranch": "dev",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "checkpoint_files": {
+      "path": "checkpoint_files",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1775371475640,
+      "keyFiles": []
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 3,
+      "lastAccessed": 1775371475641,
+      "keyFiles": [
+        "a100-architecture-diagram.md",
+        "gpgpusim-microarch-modeling-detail.md",
+        "hopper-sm90-feasibility-report.md"
+      ]
+    },
+    "gpu-simulator": {
+      "path": "gpu-simulator",
+      "purpose": null,
+      "fileCount": 14,
+      "lastAccessed": 1775371475642,
+      "keyFiles": [
+        "CLAUDE.md",
+        "CMakeLists.txt",
+        "Makefile",
+        "README.md",
+        "accel-sim.cc"
+      ]
+    },
+    "hw_run": {
+      "path": "hw_run",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1775371475642,
+      "keyFiles": []
+    },
+    "sim_run_12.8": {
+      "path": "sim_run_12.8",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1775371475642,
+      "keyFiles": []
+    },
+    "util": {
+      "path": "util",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775371475642,
+      "keyFiles": []
+    },
+    "gpu-simulator/bin": {
+      "path": "gpu-simulator/bin",
+      "purpose": "Executable scripts",
+      "fileCount": 0,
+      "lastAccessed": 1775371475642,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "util/denvdis/data12/sm90_2.txt",
+      "accessCount": 34,
+      "lastAccessed": 1775308780127,
+      "type": "file"
+    },
+    {
+      "path": "gpu-simulator/gpgpu-sim/src/abstract_hardware_model.h",
+      "accessCount": 26,
+      "lastAccessed": 1775385584988,
+      "type": "directory"
+    },
+    {
+      "path": "gpu-simulator/trace-driven/trace_driven.cc",
+      "accessCount": 23,
+      "lastAccessed": 1775385597061,
+      "type": "file"
+    },
+    {
+      "path": "gpu-simulator/ISA_Def/trace_opcode.h",
+      "accessCount": 17,
+      "lastAccessed": 1775371878537,
+      "type": "file"
+    },
+    {
+      "path": "gpu-simulator/ISA_Def/ampere_opcode.h",
+      "accessCount": 14,
+      "lastAccessed": 1775308021214,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 13,
+      "lastAccessed": 1775373480700,
+      "type": "directory"
+    },
+    {
+      "path": "gpu-simulator/trace-driven",
+      "accessCount": 9,
+      "lastAccessed": 1775309394555,
+      "type": "directory"
+    },
+    {
+      "path": "gpu-simulator/configs/tested-cfgs/SM80_A100/trace.config",
+      "accessCount": 9,
+      "lastAccessed": 1775309528543,
+      "type": "file"
+    },
+    {
+      "path": "gpu-simulator/gpgpu-sim/configs/tested-cfgs/SM80_A100/gpgpusim.config",
+      "accessCount": 9,
+      "lastAccessed": 1775309528547,
+      "type": "file"
+    },
+    {
+      "path": "util/job_launching/configs/define-standard-cfgs.yml",
+      "accessCount": 8,
+      "lastAccessed": 1775308210420,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/modal/trace_h100.py",
+      "accessCount": 8,
+      "lastAccessed": 1775375058357,
+      "type": "file"
+    },
+    {
+      "path": "gpu-simulator/ISA_Def",
+      "accessCount": 7,
+      "lastAccessed": 1775285944354,
+      "type": "directory"
+    },
+    {
+      "path": "gpu-simulator/gpgpu-sim",
+      "accessCount": 6,
+      "lastAccessed": 1775374576176,
+      "type": "directory"
+    },
+    {
+      "path": "gpu-simulator",
+      "accessCount": 6,
+      "lastAccessed": 1775375192589,
+      "type": "directory"
+    },
+    {
+      "path": "gpu-simulator/trace-parser",
+      "accessCount": 6,
+      "lastAccessed": 1775385481279,
+      "type": "directory"
+    },
+    {
+      "path": "util/tracer_nvbit/CLAUDE.md",
+      "accessCount": 3,
+      "lastAccessed": 1775307510291,
+      "type": "file"
+    },
+    {
+      "path": ".claude/index.json",
+      "accessCount": 3,
+      "lastAccessed": 1775307510341,
+      "type": "file"
+    },
+    {
+      "path": "gpu-simulator/trace-parser/trace_parser.cc",
+      "accessCount": 3,
+      "lastAccessed": 1775375183776,
+      "type": "directory"
+    },
+    {
+      "path": "util/job_launching/configs",
+      "accessCount": 2,
+      "lastAccessed": 1775285225321,
+      "type": "directory"
+    },
+    {
+      "path": "util/denvdis/data12/sm80_2.txt",
+      "accessCount": 2,
+      "lastAccessed": 1775285761241,
+      "type": "directory"
+    },
+    {
+      "path": "util/tracer_nvbit/modal/README.md",
+      "accessCount": 2,
+      "lastAccessed": 1775305692052,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/install_nvbit.sh",
+      "accessCount": 2,
+      "lastAccessed": 1775305692057,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/tracer_tool/common.h",
+      "accessCount": 2,
+      "lastAccessed": 1775305692065,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/Makefile",
+      "accessCount": 2,
+      "lastAccessed": 1775305692103,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/tracer_tool/Makefile",
+      "accessCount": 2,
+      "lastAccessed": 1775305702813,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/tracer_tool/traces-processing/post-traces-processing.cpp",
+      "accessCount": 2,
+      "lastAccessed": 1775305702904,
+      "type": "file"
+    },
+    {
+      "path": "util/denvdis/README.md",
+      "accessCount": 1,
+      "lastAccessed": 1775283418940,
+      "type": "file"
+    },
+    {
+      "path": "util/denvdis/sm_version.txt",
+      "accessCount": 1,
+      "lastAccessed": 1775283418945,
+      "type": "file"
+    },
+    {
+      "path": "docs/hopper-sm90-feasibility-report.md",
+      "accessCount": 1,
+      "lastAccessed": 1775283425423,
+      "type": "file"
+    },
+    {
+      "path": "gpu-simulator/ISA_Def/kepler_opcode.h",
+      "accessCount": 1,
+      "lastAccessed": 1775283428856,
+      "type": "file"
+    },
+    {
+      "path": "gpu-simulator/ISA_Def/volta_opcode.h",
+      "accessCount": 1,
+      "lastAccessed": 1775283428860,
+      "type": "file"
+    },
+    {
+      "path": "gpu-simulator/ISA_Def/pascal_opcode.h",
+      "accessCount": 1,
+      "lastAccessed": 1775283432263,
+      "type": "file"
+    },
+    {
+      "path": "gpu-simulator/ISA_Def/turing_opcode.h",
+      "accessCount": 1,
+      "lastAccessed": 1775283432269,
+      "type": "file"
+    },
+    {
+      "path": "util/denvdis/data12/sm90_1.txt",
+      "accessCount": 1,
+      "lastAccessed": 1775283791467,
+      "type": "file"
+    },
+    {
+      "path": "gpu-simulator/configs/tested-cfgs",
+      "accessCount": 1,
+      "lastAccessed": 1775284358284,
+      "type": "directory"
+    },
+    {
+      "path": "util/denvdis/data12",
+      "accessCount": 1,
+      "lastAccessed": 1775285751474,
+      "type": "directory"
+    },
+    {
+      "path": "util/tracer_nvbit",
+      "accessCount": 1,
+      "lastAccessed": 1775305682968,
+      "type": "directory"
+    },
+    {
+      "path": "util/tracer_nvbit/run_hw_trace.py",
+      "accessCount": 1,
+      "lastAccessed": 1775305692108,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/tracer_tool/inject_funcs.cu",
+      "accessCount": 1,
+      "lastAccessed": 1775305692158,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/tracer_tool/tracer_tool.cu",
+      "accessCount": 1,
+      "lastAccessed": 1775305692730,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/tracer_tool/traces-processing/Makefile",
+      "accessCount": 1,
+      "lastAccessed": 1775305702796,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/others/spinlock_tool/README.md",
+      "accessCount": 1,
+      "lastAccessed": 1775305702803,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/generate-volta-traces.sh",
+      "accessCount": 1,
+      "lastAccessed": 1775305702847,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/others/spinlock_tool/common.h",
+      "accessCount": 1,
+      "lastAccessed": 1775305702899,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/others/spinlock_tool/spinlock_tool.cu",
+      "accessCount": 1,
+      "lastAccessed": 1775305703310,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/others/silicon_checkpoint_tool/checkpoint/checkpoint.cu",
+      "accessCount": 1,
+      "lastAccessed": 1775305712796,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/others/bbv_tool/bbv_count/bbv_count.cu",
+      "accessCount": 1,
+      "lastAccessed": 1775305712800,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/others/occupancy_calc_tool/occupancy_calc/occupancy_calc.cu",
+      "accessCount": 1,
+      "lastAccessed": 1775305712810,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/generate-turing-traces.sh",
+      "accessCount": 1,
+      "lastAccessed": 1775305712847,
+      "type": "file"
+    },
+    {
+      "path": "util/tracer_nvbit/tracer_tool/format-code.sh",
+      "accessCount": 1,
+      "lastAccessed": 1775305712850,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
